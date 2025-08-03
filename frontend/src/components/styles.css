@@ -1,0 +1,241 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  color: #333;
+}
+
+/* Container shared by all pages */
+.container {
+  background: white;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.3);
+  padding: 40px 35px 45px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.container:hover {
+  box-shadow: 0 16px 40px rgba(102, 126, 234, 0.45);
+}
+
+/* Titles */
+h1, h2 {
+  font-weight: 700;
+  color: #2a2a72;
+  margin-bottom: 25px;
+}
+
+/* Form elements */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+/* Buttons */
+button,
+.link-button {
+  display: inline-block;
+  width: 100%;
+  background: #667eea;
+  color: white;
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+}
+
+button:hover,
+.link-button:hover {
+  background-color: #5561c9;
+  box-shadow: 0 10px 30px rgba(85, 97, 201, 0.6);
+}
+
+/* Dashboard cards */
+.card {
+  background: #f7f9ff;
+  border-radius: 14px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 22px rgba(102, 126, 234, 0.15);
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 18px;
+  color: #444;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* Rewards styling */
+.rewards ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rewards li {
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+  color: #444;
+}
+
+.rewards li::before {
+  content: "🎁";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+/* Leaderboard list */
+.leaderboard-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.leaderboard-list li {
+  background: #e3e9ff;
+  padding: 15px 20px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #2a2a72;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaderboard-list li:nth-child(1) {
+  background: #ffd700;
+  color: #222;
+  font-weight: 800;
+  box-shadow: 0 5px 25px rgba(255, 215, 0, 0.3);
+}
+
+.leaderboard-list li:nth-child(2) {
+  background: #c0c0c0;
+  color: #222;
+  font-weight: 700;
+}
+
+.leaderboard-list li:nth-child(3) {
+  background: #cd7f32;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Responsive tweaks */
+/* Mobile */
+@media (max-width: 450px) {
+  body {
+    padding: 30px 10px;
+  }
+
+  .container {
+    padding: 30px 20px 35px;
+    max-width: 100%;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 451px) and (max-width: 900px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    padding: 45px 40px 50px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  button,
+  .link-button {
+    font-size: 20px;
+    padding: 18px 0;
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 901px) {
+  body {
+    padding: 60px 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 700px;
+    padding: 50px 50px 60px;
+  }
+
+  .card {
+    padding: 35px 40px;
+  }
+
+  .card p {
+    font-size: 22px;
+  }
+
+  button,
+  .link-button {
+    font-size: 22px;
+    padding: 20px 0;
+  }
+}
