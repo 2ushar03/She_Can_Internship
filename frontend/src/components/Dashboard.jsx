@@ -12,7 +12,7 @@ export default function Dashboard() {
       navigate("/");
       return;
     }
-    fetch("http://localhost:5000/api/interns")
+    fetch(`${import.meta.env.VITE_API_BASE}/api/interns`)
       .then((res) => res.json())
       .then(setInterns)
       .catch(() => alert("Error fetching intern data"));
