@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./styles.css"; // Assuming you have a styles.css for basic styling
+import "./styles.css";
 
 export default function Login() {
   const [name, setName] = useState("");
@@ -17,7 +17,6 @@ export default function Login() {
       alert("Please enter your password");
       return;
     }
-    // For now, no actual password validation — just passing both to dashboard
     navigate("/dashboard", { state: { name, password } });
   }
 
@@ -29,7 +28,7 @@ export default function Login() {
         <input
           id="name"
           type="text"
-          placeholder="John Doe"
+          placeholder="type eve"
           value={name}
           onChange={(e) => setName(e.target.value)}
           autoFocus
@@ -39,7 +38,7 @@ export default function Login() {
         <input
           id="password"
           type="password"
-          placeholder="Your password"
+          placeholder="pass@123"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
