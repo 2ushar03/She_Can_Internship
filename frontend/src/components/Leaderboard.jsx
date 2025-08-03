@@ -5,14 +5,14 @@ export default function Leaderboard() {
   const [interns, setInterns] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/interns")
-      .then((res) => res.json())
-      .then((data) =>
-        // Sort descending by donations
-        setInterns(data.sort((a, b) => b.donations - a.donations))
-      )
-      .catch(() => alert("Error fetching leaderboard data"));
-  }, []);
+  fetch(`${import.meta.env.VITE_API_BASE}/api/interns`)
+    .then((res) => res.json())
+    .then((data) =>
+      // Sort descending by donations
+      setInterns(data.sort((a, b) => b.donations - a.donations))
+    )
+    .catch(() => alert("Error fetching leaderboard data"));
+}, []);
 
   return (
     <div className="container">
