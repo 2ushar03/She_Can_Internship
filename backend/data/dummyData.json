@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice",
+    "referralCode": "alice2025",
+    "donations": 1200
+  },
+  {
+    "name": "Bob",
+    "referralCode": "bob2025",
+    "donations": 900
+  },
+  {
+    "name": "Charlie",
+    "referralCode": "charlie2025",
+    "donations": 1500
+  },
+  {
+    "name": "Dana",
+    "referralCode": "dana2025",
+    "donations": 600
+  },
+  {
+    "name": "Eve",
+    "referralCode": "eve2025",
+    "donations": 750
+  }
+]
