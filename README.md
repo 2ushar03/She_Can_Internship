@@ -3,6 +3,10 @@
 
   <p><em>This project features a fully responsive frontend design for usability across devices.</em></p>
 
+  <h2>Live Demo</h2>
+<p>Check out the deployed frontend here: <a href="https://shecanassignment.vercel.app/" target="_blank" rel="noopener noreferrer">https://shecanassignment.vercel.app/</a></p>
+
+
   <h2>Overview</h2>
   <p>This project is a basic full-stack Intern Portal built using the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js). It features a simple login page, an intern dashboard, and a leaderboard. The frontend is designed to be responsive and works well on desktops, tablets, and mobile devices.</p>
 
